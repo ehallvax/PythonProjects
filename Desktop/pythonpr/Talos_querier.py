@@ -51,7 +51,7 @@ def search_function(search_string):
 
 def trim_domain(url_in):
     out_domain = url_in
-    prefixes = ['http://', 'https://', 'www.']
+    prefixes = ['http://', 'https://']
     for prefix in prefixes:
         if url_in.startswith(prefix):
             out_domain = url_in[len(prefix):]
